@@ -31,18 +31,18 @@ metres/second at some point in time, and such that X is as large as possible. If
 is C, the grader will view X as correct if |X - C| / C < 10^-5.
 
 ## Sample Input 1
-3
-0 100
-20 50
-10 120
+3\
+0 100\
+20 50\
+10 120\
 
 ## Output for Sample Input 1
-7.0
+7.0\
 
 ## Sample Input 2
-5
-20 -5
-0 -17
-10 31
-5 -3
-30 11
+5\
+20 -5\
+0 -17\
+10 31\
+5 -3\
+30 11\
