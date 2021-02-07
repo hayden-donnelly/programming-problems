@@ -1,7 +1,7 @@
 # Surmising a Sprinter's Speed
 
-Problem is from the Canadian Computing Competition's online grader.
-Time limit: 3 seconds.
+Problem is from the Canadian Computing Competition's online grader.\
+Time limit: 3 seconds.\
 All test cases passed.
 
 ## Problem Description
