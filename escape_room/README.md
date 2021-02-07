@@ -1,5 +1,6 @@
 # Escape Room
 
+Problem is from the Canadian Computing Competition's online grader.\
 Time limit: 2 seconds.\
 All test cases passed.
 
