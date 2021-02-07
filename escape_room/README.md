@@ -40,5 +40,5 @@ Output yes if it is possible to escape from the room. Otherwise, output no.
 1 11 12 12\
 6  2  3  9
 
-# Output for Sample Input
+## Output for Sample Input
 yes
