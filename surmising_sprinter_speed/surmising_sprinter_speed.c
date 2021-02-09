@@ -38,4 +38,5 @@ int main()
     }
 
     printf("%f\n", greatest_speed);
+	return 0;
 }
