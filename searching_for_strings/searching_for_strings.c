@@ -1,73 +1,117 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 
 const int max_input_len = 200000;
-static char input[max_input_len];
-static char needle[max_input_len];
-static char haystack[max_input_len];
-int needle_len = 0;
-int haystack_len = 0;
+int needle_len;
+int haystack_len;
+char *needle;
+char *haystack;
+char **needle_permutations;
+int current_permutation;
+int permutations_found;
 
-void get_input(char *dest, int *len_var)
+void get_input(char dest[], int *len_var)
 {
-    scanf("%s", input);
+    scanf("%s", dest);
     for(int i = 0; i < max_input_len; i++)
     {
-        if(input[i] == 0)
+        if(dest[i] == 0)
         {
-            *len_var = i-1;
+            *len_var = i;
             break;
         }
-        dest[i] = input[i];
     }
-}
-
-void print_array(char a[], int n)
-{
-    for(int i = 0; i < n; i++)
-    {
-        printf("%s ", a[i]);
-    }
-    printf("\n");
 }
 
 void swap(char *first, char *second)
 {
-    char *temp = first;
-    first = second;
-    second = temp;
+    char temp = *first;
+    *first = *second;
+    *second = temp;
 }
 
-
-// Heap's algo: https://www.geeksforgeeks.org/heaps-algorithm-for-generating-permutations/?ref=leftbar-rightbar
-void heap_permutation(char a[], int size, int n)
+// Source: https://www.geeksforgeeks.org/distinct-permutations-string-set-2/
+void permute(int i, char a[], int n)
 {
-    if(size == 1)
+    if(i == n)
     {
-        print_array(a, n);
+        needle_permutations[current_permutation] = (char*)malloc(sizeof(char)*n);
+        for(int i = 0; i < n; i++)
+        {
+            needle_permutations[current_permutation][i] = a[i];
+        }
+        current_permutation++;
         return;
     }
 
-    for(int i = 0; i < size; i++)
+    char prev = '*';
+
+    for(int j = i; j < n; j++)
     {
-        heap_permutation(a, size-1, n);
-    
-        if(size % 2 == 1)
+        char temp[n];
+        memcpy(&temp, a, n);
+        if(j > i && a[i] == a[j])
         {
-            swap(a[0], a[size-1]);
+            continue;
         }
-        else
+        if(prev != '*' && prev == a[j])
         {
-            swap(a[i], a[size-1]);
+            continue;
+        }
+
+        swap(&temp[i], &temp[j]);
+        prev = a[j];
+        permute(i + 1, temp, n);
+    }
+}
+
+void check_for_permutation(int i)
+{
+    for(int k = 0; k < current_permutation; k++)
+    {
+        if(needle_permutations[k] == NULL)
+        {
+            continue;
+        }
+        for(int w = 0; w < needle_len; w++)
+        {
+            if(haystack[i+w] != needle_permutations[k][w])
+            {
+                break;
+            }
+            else if(w == needle_len-1)
+            {
+                permutations_found++;
+                needle_permutations[k] = NULL;
+                return;
+            }
         }
     }
 }
 
 int main()
 {
+    permutations_found = 0;
+    needle = (char*)malloc(sizeof(char)*max_input_len);
+    haystack = (char*)malloc(sizeof(char)*max_input_len);
     get_input(needle, &needle_len);
     get_input(haystack, &haystack_len);
 
-    heap_permutation(needle, needle_len, needle_len);
+    int needle_len_fact = needle_len;
+    for(int i = needle_len-1; i > 0; i--)
+    {
+        needle_len_fact *= i;
+    }
+    needle_permutations = (char**)malloc(sizeof(char*)*needle_len_fact);
+
+    permute(0, needle, needle_len);
+
+    for(int i = 0; i <= haystack_len-needle_len; i++)
+    {
+        check_for_permutation(i);
+    }
+    printf("%d\n", permutations_found);
     return 0;
 }
 
