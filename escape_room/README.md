@@ -44,4 +44,6 @@ Output yes if it is possible to escape from the room. Otherwise, output no.
 ```
 
 ## Output for Sample Input
-```yes```
+```
+yes
+```
