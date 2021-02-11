@@ -52,3 +52,8 @@ is C, the grader will view X as correct if |X - C| / C < 10^-5.
 5 -3
 30 11
 ```
+
+## Output for sample Input 2
+```
+6.8
+```
