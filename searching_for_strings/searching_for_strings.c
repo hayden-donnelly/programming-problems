@@ -7,8 +7,6 @@ int needle_len;
 int haystack_len;
 char *needle;
 char *haystack;
-char **needle_permutations;
-int current_permutation;
 int permutations_found;
 
 void get_input(char dest[], int *len_var)
@@ -36,12 +34,22 @@ void permute(int i, char a[], int n)
 {
     if(i == n)
     {
-        needle_permutations[current_permutation] = (char*)malloc(sizeof(char)*n);
-        for(int i = 0; i < n; i++)
+        for(int w = 0; w <= haystack_len-needle_len; w++)
         {
-            needle_permutations[current_permutation][i] = a[i];
+            for(int k = 0; k < needle_len; k++)
+            {
+                if(haystack[w+k] != a[k])
+                {
+                    //w+=k;
+                    break;
+                }
+                else if(k == needle_len-1)
+                {
+                    permutations_found++;
+                    return;
+                }
+            }
         }
-        current_permutation++;
         return;
     }
 
@@ -60,34 +68,53 @@ void permute(int i, char a[], int n)
             continue;
         }
 
-        swap(&temp[i], &temp[j]);
+        swap(&a[i], &a[j]);
         prev = a[j];
-        permute(i + 1, temp, n);
+        permute(i + 1, a, n);
     }
 }
 
-void check_for_permutation(int i)
+void second_permute(char a[], int size, int n)
 {
-    for(int k = 0; k < current_permutation; k++)
+    if(size == 1)
     {
-        if(needle_permutations[k] == NULL)
+        for(int w = 0; w <= haystack_len-needle_len; w++)
         {
-            continue;
+            for(int k = 0; k < needle_len; k++)
+            {
+                if(haystack[w+k] != a[k])
+                {
+                    //w+=k-1;
+                    break;
+                }
+                else if(k == needle_len-1)
+                {
+                    permutations_found++;
+                    return;
+                }
+            }
         }
-        for(int w = 0; w < needle_len; w++)
+        return;
+    }
+
+    for(int i = 0; i < size; i++)
+    {
+        second_permute(a, size-1, n);
+
+        if(size % 2 == 1)
         {
-            if(haystack[i+w] != needle_permutations[k][w])
-            {
-                break;
-            }
-            else if(w == needle_len-1)
-            {
-                permutations_found++;
-                needle_permutations[k] = NULL;
-                return;
-            }
+            swap(&a[0], &a[size-1]);
+        }
+        else
+        {
+            swap(&a[i], &a[size-1]);
         }
     }
+}
+
+int pstrcmp( const void* a, const void* b )
+{
+  return strcmp( *(const char**)a, *(const char**)b );
 }
 
 int main()
@@ -98,18 +125,10 @@ int main()
     get_input(needle, &needle_len);
     get_input(haystack, &haystack_len);
 
-    int needle_len_fact = needle_len;
-    for(int i = needle_len-1; i > 0; i--)
+    if(needle_len <= haystack_len)
     {
-        needle_len_fact *= i;
-    }
-    needle_permutations = (char**)malloc(sizeof(char*)*needle_len_fact);
-
-    permute(0, needle, needle_len);
-
-    for(int i = 0; i <= haystack_len-needle_len; i++)
-    {
-        check_for_permutation(i);
+        permute(0, needle, needle_len);
+        //second_permute(needle, needle_len, needle_len);
     }
     printf("%d\n", permutations_found);
     return 0;
