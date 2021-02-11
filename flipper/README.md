@@ -4,7 +4,7 @@
 You are trying to pass the time while at the optomotrist. You notice there is a grid of four numbers:
 
 ```
-1 2\
+1 2
 3 4
 ```
 
@@ -13,14 +13,14 @@ You see lots of mirrors and lenses at the optomoetrist, and wonder how flipping 
 Specifically, a "horizontal" flip (across the horizontal centre line) would take the original grid of four numbers and result in:
 
 ```
-3 4\
+3 4
 1 2
 ```
 
 A "vertical" flip (across the vertical centre line) would take the original grid of four numbers and result in:
 
 ```
-2 1\
+2 1
 4 3
 ```
 
@@ -39,7 +39,7 @@ HV
 
 ## Output for Sample Input 1
 ```
-4 3\
+4 3
 2 1
 ```
 
@@ -48,6 +48,6 @@ VVHH
 
 ## Output for Sample Input 2
 ```
-1 2\
+1 2
 3 4
 ```
