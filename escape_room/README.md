@@ -35,11 +35,15 @@ For an additional 4 of the 15 marks, M ≤ 200 and N ≤ 200.
 Output yes if it is possible to escape from the room. Otherwise, output no.
 
 ## Sample Input
-3\
-4\
-3 10  8 14\
-1 11 12 12\
+```
+3
+4
+3 10  8 14
+1 11 12 12
 6  2  3  9
+```
 
 ## Output for Sample Input
+```
 yes
+```
