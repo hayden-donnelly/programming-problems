@@ -1,4 +1,7 @@
 # Flipper
+Problem is from the Canadian Computing Competition's online grader.\
+Time limit: 1 seconds.\
+All test cases passed.
 
 ## Problem Descripion
 You are trying to pass the time while at the optomotrist. You notice there is a grid of four numbers:
