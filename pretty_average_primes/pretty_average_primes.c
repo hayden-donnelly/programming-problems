@@ -1,5 +1,57 @@
 #include<stdio.h>
 
+void find_pairs(int number)
+{
+    int goal = number*2;
+    int a = 2;
+    int b = 2;
+
+    for(int i = 2; i <= a; i++)
+    {
+        if(a % i == 0 && i != a)
+        {
+            a++;
+            i = 1;
+            continue;
+        }
+        else if(i == a)
+        {
+            if(a > number)
+            {
+                break;
+            }
+            else
+            {
+                b = a;
+                for(int k = 2; a+b <= goal; k++)
+                {
+                    if(b % k == 0 && k != b)
+                    {
+                        b++;
+                        k = 1;
+                        continue;
+                    }
+                    else if(k == b)
+                    {
+                        if(a+b == goal)
+                        {
+                            printf("%d %d\n", a, b);
+                            return;
+                        }
+                        else
+                        {
+                            b++;
+                            k = 1;
+                        }
+                    }
+                }
+            }
+            a++;
+            i = 1;
+        }
+    }
+}
+
 int main()
 {
     int t = 0;
@@ -10,71 +62,8 @@ int main()
         scanf("%d", &n[l]);
     }
 
-    /*for(int i = 0; i < t; i++)
+    for(int i = 0; i < t; i++)
     {
-        //printf("asdas\n");
-        int pair_found = 0;
-        int goal = n[i]*2;
-        //printf("goal %d\n", goal);
-        int a = 2;
-        int b = 2;
-
-        for(int k = 2; k <= a; k++)
-        {
-            if(a % k == 0 && a != k)
-            {
-                a++;
-                k = 2;
-            }
-            else
-            {
-                //printf("second tier %d\n", a);
-                b = a;
-                for(int j = 2; b+a <= goal; j++)
-                {
-                    if(b % j == 0 && b != j)
-                    {
-                        //printf("third tier\n");
-                        b++;
-                        j = 2;
-                    }
-                    else if(b+a == goal)
-                    {
-                        pair_found = 1;
-                    }
-                }
-                if(pair_found)
-                {
-                    //printf("fourth tier\n");
-                    printf("%d %d\n", a, b);
-                    break;
-                }
-                else
-                {
-                    a++;
-                    k = 2;
-                }
-            }
-        }
-    }*/
-
-    int a = 2;
-    for(int i = 2; i <= a; i++)
-    {
-        if(a % i == 0 && i != a)
-        {
-            a++;
-            i = 2;
-        }
-        else if(i == a)
-        {
-            printf("prime: %d\n", a);
-            if(a > 100)
-            {
-                break;
-            }
-            a++;
-            i = 2;
-        }
+        find_pairs(n[i]);
     }
 }
