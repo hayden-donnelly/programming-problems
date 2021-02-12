@@ -20,8 +20,8 @@ void print_table_vertical_lead(int x_start, int x_increment, int x_finish, int y
         {
             printf("%d ", table[x][y]);
         }
+        printf("\n");
     }
-    printf("\n");
 }
 
 int main()

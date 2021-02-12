@@ -1,4 +1,7 @@
 # Sunflowers
+Problem is from the Canadian Computing Competition's online grader.\
+Time limit: 1 second.\
+All test cases passed.
 
 ## Problem Description
 Barbara plants N different sunflowers, each with a unique height, order from smalles to largest,
