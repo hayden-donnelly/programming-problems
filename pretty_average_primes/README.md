@@ -1,4 +1,6 @@
 # Pretty Average Primes
+Problem is from the Canadian Computing Competition's online grader.\
+Time limit: 1 seconds.\
 
 ## Problem Description
 For various given positive integers N > 3, find two primes, A and B such that N is the average (mean)
