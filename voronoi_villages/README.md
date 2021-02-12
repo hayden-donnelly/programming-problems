@@ -1,4 +1,5 @@
 # Voronoi Villages
+Problem is from the Canadian Computing Competition's online grader.
 
 ## Problem Description
 In the country of Voronoi, there are N villages, located at distinct points on a straight road. Each of
