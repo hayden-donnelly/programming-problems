@@ -3,7 +3,7 @@
 void find_pairs(int number)
 {
     int goal = number*2;
-    int a = 3;
+    int a = 2;
     int b = 0;
 
     for(int i = 2; i <= a; i++)
@@ -20,7 +20,14 @@ void find_pairs(int number)
                 }
                 else if(b % k == 0)
                 {
-                    a++;
+                    if(a == 2)
+                    {
+                        a += 1;
+                    }
+                    else
+                    {
+                        a += 2;
+                    }
                     i = 1;
                     break;
                 }  
@@ -28,7 +35,14 @@ void find_pairs(int number)
         }
         else if(a % i == 0)
         {
-            a++;
+            if( a == 2)
+            {
+                a += 1;
+            }
+            else
+            {
+                a += 2;
+            }
             i = 1;
         }   
     }
