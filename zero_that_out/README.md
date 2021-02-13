@@ -1,4 +1,7 @@
 # Zero That Out
+Problem is from the Canadian Computing Competition's online grader.\
+Time limit: 5 seconds.\
+All test cases passed.
 
 ## Problem Description
 Your boss has aked tyou to add up a sequence of positive numbers to determine how much money your company made last year.
