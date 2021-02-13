@@ -1,4 +1,7 @@
 # Part Invitation
+Problem is from the Canadian Computing Competition's online grader.\
+Time limit: 5 seconds.\
+All test cases passed.
 
 ## Problem Description
 You are hosting a party an do not have room to invite all of your friends. You use the following unemotional mathematical method to determine which friends to invite.
