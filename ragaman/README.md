@@ -1,4 +1,7 @@
 # Ragaman
+Problem is from the Canadian Computing Competition's online grader.\
+Time limit: 3 seconds.\
+All test cases passed.
 
 ## Problem Description
 An anagram of a string is formed by rearranging the letters in the string. For example, the anagarams of aab are aab, aba, and baa.
