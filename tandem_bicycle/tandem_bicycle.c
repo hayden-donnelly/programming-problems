@@ -10,7 +10,7 @@ int main()
 {
     int question = 0;
     int n = 0;
-    scanf("%d %d", &n, &question);
+    scanf("%d %d", &question, &n);
     int first_country[n];
     int second_country[n];
     for(int i = 0; i < n; i++)
