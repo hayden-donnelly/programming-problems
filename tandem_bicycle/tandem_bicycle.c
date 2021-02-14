@@ -30,14 +30,18 @@ int main()
     {
         for(int i = 0; i < n; i++)
         {
-            speed_sum += first_country[i] + second_country[i];
+            int first_speed = first_country[i];
+            int second_speed = second_country[i];
+            speed_sum += (first_speed > second_speed) ? first_speed : second_speed;
         }
     }
     else if(question == 2)
     {
         for(int i = 0; i < n; i++)
         {
-            speed_sum += first_country[i] + second_country[n-1-i];
+            int first_speed = first_country[i];
+            int second_speed = second_country[n-1-i];
+            speed_sum += (first_speed > second_speed) ? first_speed : second_speed;
         }
     }
 
