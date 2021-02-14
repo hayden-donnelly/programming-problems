@@ -1,6 +1,7 @@
 # High Tide, Low Tide
 Problem is from the Canadian Computing Competition's online grader.\
-Time limit: 1 second.
+Time limit: 1 second.\
+10/15 test cases passed.
 
 ## Problem Description
 Joe Coder is camping near the Bay of Fundy between Nova Scotia and New Brunswick. When he arrived at the bay, he was told that the difference in height between high tide and low tide at the Bay of Fundy was the largest tidal difference in the world. Ever the skeptic, joe decided to verify this. He chose a reference point and, after learning from the radio when the tides were highest and lowest, he went with a boat to his reference point and measured the depth of the water. Unfortunately, on the last day of his trip, a strong wind scattered his measurements.
