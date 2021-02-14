@@ -1,4 +1,6 @@
 # Tandem Bicycle
+Problem is from the Canadian Computing Competition's online grader.\
+Time limit: 3 seconds.
 
 ## Problem Description
 Since time immemorial, the citizens of Dmojistan and Pegland have been at war. Now, they have finally signed a truce. They have decided to participate in a tandem bicycle ride to celebrate the truce. There are N citizens from each country. They must be assigned to pairs so tht each pair contains one person from Dmojistan and one person from Pegland.
