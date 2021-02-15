@@ -16,7 +16,7 @@ int main()
     {
         char *current_name = malloc(sizeof(char)*20);
         scanf("%s", current_name);
-        if(strcmp(names[n-1-i], current_name) != 0)
+        if(strcmp(names[n-1-i], current_name) != 0 || strcmp(names[i], current_name) == 0)
         {
             printf("bad\n");
             return 0;
