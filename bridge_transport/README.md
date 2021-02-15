@@ -1,4 +1,7 @@
 # Bridge Transport
+Problem is from the Canadian Computing Competition's online grader.\
+Time limit: 1 second.\
+12/15 test cases passed.
 
 ## Problem Description
 A train of railway cars attempts to cross a bridge. The lenght of each car is 10m but their weights might be different. The brdige is 40m long (thus can hold 4 train cars at one time). The bridge will crack if the total weight of the cars on it at one time is greater than a certain weight. The cars are numbered starting at 1, going up to N, anf they cross the bridge in that order (i.e., 1 immediately followed by 2, which is immediately followed by 3, and so on).
