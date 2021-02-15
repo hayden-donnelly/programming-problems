@@ -1,6 +1,7 @@
 # Assigning Partners
 Problem is from the Canadian Computing Competition's online grader.\
-Time limit: 5 seconds.
+Time limit: 5 seconds.\
+All test cases passed.
 
 ## Problem Description
 The CEMC is organizing a workshop with an activity involving pairs of students. They decided to assign partners ahead of time. You need to determine if they did this consistently. That is whenever A is a partner of B, then B is also a partner of A, and no one is a partner of themselves.
