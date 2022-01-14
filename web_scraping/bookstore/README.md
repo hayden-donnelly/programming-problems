@@ -8,3 +8,4 @@ A CSV file containing all of the scraped data.
 | Title       | Price (Euros) | Star Rating |
 |-------------|---------------|-------------|
 | In Her Wake | 12.84         | 1           |
+|-------------|---------------|-------------|
