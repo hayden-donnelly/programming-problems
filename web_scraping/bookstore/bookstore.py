@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 from word2number import w2n
 from csv import writer
 from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
