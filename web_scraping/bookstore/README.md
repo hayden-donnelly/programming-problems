@@ -4,6 +4,7 @@ This script uses Selenium and BS4 to scrape the title, price, and rating from al
 
 ## Output
 A CSV file containing all of the scraped data.
+Example:
 
 | Title       | Price (Euros) | Star Rating |
 |-------------|---------------|-------------|
