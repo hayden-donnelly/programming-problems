@@ -3,4 +3,4 @@ This is a repository which contains code that I've written to learn or practice 
 
 So far it contains:
 - Algorithms implemented in C
-- Web scraping with python
+- Web scraping in python
