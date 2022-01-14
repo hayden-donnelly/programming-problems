@@ -15,7 +15,7 @@ A CSV file containing all of the scraped data, e.g.
 | "1,000 Places to See Before You Die" | 26.08         | 5           |
 
 ```
-Title, Price (Euros), Star Rating
+Title,Price (Euros),Star Rating
 In Her Wake,12.84,1
 How Music Works,37.32,2
 Black Dust,34.53,5
