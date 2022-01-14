@@ -11,3 +11,12 @@ A CSV file containing all of the scraped data, e.g.
 | How Music Works | 37.32        | 2           |
 | Black Dust | 34.53         | 5           |
 | Birdsong: A Story in Pictures | 54.64         | 3           |
+
+```
+Title, Price (Euros), Star Rating
+In Her Wake,12.84,1
+How Music Works,37.32,2
+Black Dust,34.53,5
+Birdsong: A Story in Pictures,54.64,3
+...
+```
