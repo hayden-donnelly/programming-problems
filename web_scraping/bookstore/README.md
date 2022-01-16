@@ -1,6 +1,6 @@
 # Bookstore
 
-This script uses Selenium and BS4 to scrape the title, price, and rating from all books in a fake bookstore.
+This script uses Selenium and BS4 to scrape the title, price, and rating from all books in a fake bookstore. It requires chromedriver.
 
 ## Output
 A CSV file containing all of the scraped data, e.g.
