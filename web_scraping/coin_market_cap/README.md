@@ -1,4 +1,4 @@
-# Bookstore
+# CoinMarketCap
 
 This script uses Selenium and BS4 to scrape data on various cryptocurrencies from [CoinMarketCap](https://coinmarketcap.com/).
 
