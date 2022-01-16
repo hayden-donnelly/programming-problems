@@ -9,7 +9,7 @@ A CSV file containing all of the scraped data, e.g.
 |-------------|---------------|-------------|-----------|-------|
 | Bitcoin | BTC         | $43,091.96           | $815,752,586,291          | 18,930,506 BTC          |
 | Ethereum | ETH        | $3,324.96           | $396,256,265,596          | 119,176,306 ETH          |
-| BNB | BNB         | $82,453,469,110           | 166,801,148 BNB |
+| BNB | BNB         | $494.32          | $82,453,469,110           | 166,801,148 BNB |
 | Birdsong: A Story in Pictures | 54.64         | 3           |           |           |
 | ... | ...         | ...           |
 | "1,000 Places to See Before You Die" | 26.08         | 5           |           |           |
