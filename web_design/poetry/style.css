@@ -1,0 +1,42 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-color: rgb(144, 156, 172);
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 200px;
+  inset-inline: left;
+  filter: grayscale(100%);
+}
+
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 400px;
+  padding: 100px;
+}
+
+h2 {
+  letter-spacing: 5px;
+}
+
+.grey1 {
+  background-color: rgb(27, 27, 27);
+}
+
+.grey2 {
+  background-color: rgb(22, 22, 22);
+}
+
+.grey3 {
+  background-color: rgb(27, 27, 27);
+}
