@@ -6,7 +6,7 @@ All test cases passed.
 ## Problem Description
 An anagram of a string is formed by rearranging the letters in the string. For example, the anagarams of aab are aab, aba, and baa.
 
-A wildvcard anagram of a string is an anagram of the string where some of the letters might have been replaced with an asterisk (\*). For example, two possible anagrams of aab are \*ab and \*b\*.
+A wildcard anagram of a string is an anagram of the string where some of the letters might have been replaced with an asterisk (\*). For example, two possible anagrams of aab are \*ab and \*b\*.
 
 Given two strings, determine whether the second string is a wildcard anagram of the first string.
 
