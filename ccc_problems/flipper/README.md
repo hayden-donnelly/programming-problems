@@ -27,7 +27,7 @@ A "vertical" flip (across the vertical centre line) would take the original grid
 4 3
 ```
 
-Your taks is to determine the final orientation of the numbers in the grid after a sequence of horizontal and vertical flips.
+Your task is to determine the final orientation of the numbers in the grid after a sequence of horizontal and vertical flips.
 
 ## Input Specification
 The input consists of one line, composed of a sequence of at least one and at mose 1 000 000 characters. Each character is either H, 
