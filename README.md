@@ -15,4 +15,4 @@ Total      |                       40 |           329 |            39 |         
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/hayden-donnelly/Practice)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hayde-donnelly)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hayde-donnelly)](https://github.com/hayden-donnelly/Practice)
