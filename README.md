@@ -3,7 +3,7 @@ This is a repository which contains code that I've written to learn or practice 
 
 ## Overview
 
-Language |                    files |         blank |       comment |          code
+Language |                    files |         blank lines |       comment lines |          code lines
 ---------|--------------------------|---------------|---------------|----------
 C        |                       13 |            59 |            10 |           589
 Markdown |                       16 |           177 |             0 |           569
