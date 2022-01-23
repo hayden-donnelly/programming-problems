@@ -1,0 +1,54 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+}
+
+.container {
+  height: 68vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nature {
+  width: 100%;
+  position: absolute;
+  height: 70vh;
+  object-fit: cover;
+  overflow: hidden;
+  z-index: -1;
+  filter: brightness(35%);
+}
+
+.logo {
+  position: absolute;
+  object-fit: cover;
+  width: 50vh;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  filter: invert();
+}
+
+.main-title {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+}
+
+.content {
+  background-color: black;
+  width: 100%;
+  min-height: 400vh;
+  z-index: 2;
+  text-align: center;
+}
+
+.text {
+  color: white;
+  max-width: 60vh;
+  padding: 3.5vh;
+}
