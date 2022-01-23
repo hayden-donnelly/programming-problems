@@ -50,6 +50,11 @@ body {
 
 .text {
   color: white;
-  max-width: 60vh;
-  padding: 3.5vh;
+  padding: 6vh;
+}
+
+.photos {
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover;
 }
