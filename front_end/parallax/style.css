@@ -14,7 +14,6 @@ body {
   position: absolute;
   height: 70vh;
   object-fit: cover;
-  overflow: hidden;
   z-index: -1;
   filter: brightness(35%);
 }
@@ -23,16 +22,17 @@ body {
   position: absolute;
   object-fit: cover;
   width: 50vh;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   filter: invert();
+  z-index: 1;
 }
 
 .main-title {
   position: absolute;
-  top: 43%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
@@ -42,9 +42,10 @@ body {
 .content {
   background-color: black;
   width: 100%;
-  min-height: 400vh;
+  height: 1000vh;
   z-index: 2;
   text-align: center;
+  position: absolute;
 }
 
 .text {
