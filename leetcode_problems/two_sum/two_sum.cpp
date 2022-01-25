@@ -1,6 +1,6 @@
-#include <vector>
-
 using namespace std;
+
+#include <vector>
 
 class Solution
 {
