@@ -22,7 +22,6 @@ public:
                 }
             }
         }
-        
         // This should never be run because there should always be a solution.
         vector<int> solution {0, 0};
         return solution;
