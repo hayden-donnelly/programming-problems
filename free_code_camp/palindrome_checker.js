@@ -1,15 +1,17 @@
 function palindrome(str) {
-    str = str.split(" ").join("")
-    const arr = str.split("");
-    console.log(arr)
-    console.log(str)
-    let str2 = "";
-    for(let i = str.length-1; i >= 0; i--) {
-      str2 += arr[i];
-    }
-    console.log(str2);
-    if(str == str2) {
-      return true;
-    }
-    return false;
+  str = str.replace(/\s/g, "");
+  str = str.replace(/[^a-z0-9]/gi, "");
+  str = str.toLowerCase();
+
+  const arr = str.split("");
+  let str2 = "";
+  
+  for(let i = str.length-1; i >= 0; i--) {
+    str2 += arr[i];
   }
+  
+  if(str == str2) {
+    return true;
+  }
+  return false;
+}
