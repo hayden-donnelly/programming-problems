@@ -1,5 +1,5 @@
 # Practice
-This is a repository which contains code that I've written to learn or practice certain skills.
+This is repository contains code that I've written to learn and practice certain skills.
 
 ## Overview
 
