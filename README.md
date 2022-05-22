@@ -1,5 +1,5 @@
 # Practice
-This is repository contains code that I've written in order to practice and learn about software engineering.
+This is repository contains code that I've written in order to learn about and practice software engineering.
 
 ## Overview
 
