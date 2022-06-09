@@ -1,14 +1,5 @@
 ## About
 This reposity contains code I've written to learn new skills and practice old ones. Some of it is good, some of it is bad.
 
-## Overview
+![tumblr_ny51fz6h501scdmnro1_1280](https://user-images.githubusercontent.com/30982485/172750675-b399497f-5fb4-4ec7-ad22-e602c8bf6bd3.jpg)
 
-Language |                    files |         blank lines |       comment lines |          code lines
----------|--------------------------|---------------|---------------|----------
-C        |                       13 |            59 |            10 |           589
-Markdown |                       16 |           177 |             0 |           569
-Java     |                        6 |            60 |            23 |           525
-HTML     |                        1 |             0 |             0 |           116
-Python   |                        3 |            27 |             6 |           115
-CSS      |                        1 |             6 |             0 |            36
-Total      |                       40 |           329 |            39 |          1950
