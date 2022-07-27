@@ -1,49 +1,12 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode 
- {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution 
 {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) 
     {   
         ListNode* mergedList = nullptr;
-        
-        if(list1->val < list2->val)
-        {
-            mergedList = list1;
-            list1 = list1->next;
-        }
-        else
-        {
-            mergedList = list2;
-            list2 = list2->next;
-        }
+        ListNode* mergedListStart = nullptr;
 
-        while(list1 != nullptr && list2 != nullptr)
-        {
-            if(list1->val < list2->val)
-            {
-                mergedList->next = list1;
-                mergedList = mergedList->next;
-                list1 = list1->next;
-            }
-            else
-            {
-                mergedList->next = list2;
-                list2 = list2->next;
-            }
-        }
-
-        return mergedList;
-        /*if(list1 != nullptr && list2 != nullptr)
+        if(list1 != nullptr && list2 != nullptr)
         {
             if(list1->val < list2->val)
             {
@@ -55,30 +18,48 @@ public:
                 mergedList = list2;
                 list2 = list2->next;
             }
-        
+
+            mergedListStart = mergedList;
+
             while(list1 != nullptr && list2 != nullptr)
             {
                 if(list1->val < list2->val)
                 {
                     mergedList->next = list1;
+                    mergedList = mergedList->next;
                     list1 = list1->next;
                 }
                 else
                 {
                     mergedList->next = list2;
+                    mergedList = mergedList->next;
                     list2 = list2->next;
                 }
             }
         }
+        else if(list1 == nullptr)
+        {
+            mergedListStart = list2;
+            mergedList = list2;
+        }
+        else
+        {
+            mergedListStart = list1;
+            mergedList = list1;
+        }
 
-        if(list1 == nullptr)
+        if(mergedList != nullptr)
         {
-            mergedList->next = list2;
+            if(list1 == nullptr)
+            {
+                mergedList->next = list2;
+            }
+            else
+            {
+                mergedList->next = list1;
+            }
         }
-        else if(list2 == nullptr)
-        {
-            mergedList->next = list1;
-        }
-        return mergedList;*/
+
+        return mergedListStart;
     }
 };
