@@ -36,20 +36,7 @@ public:
                     list2 = list2->next;
                 }
             }
-        }
-        else if(list1 == nullptr)
-        {
-            mergedListStart = list2;
-            mergedList = list2;
-        }
-        else
-        {
-            mergedListStart = list1;
-            mergedList = list1;
-        }
 
-        if(mergedList != nullptr)
-        {
             if(list1 == nullptr)
             {
                 mergedList->next = list2;
@@ -58,8 +45,16 @@ public:
             {
                 mergedList->next = list1;
             }
-        }
 
-        return mergedListStart;
+            return mergedListStart;
+        }
+        else if(list1 == nullptr)
+        {
+            return list2;
+        }
+        else
+        {
+            return list1;
+        }
     }
 };
