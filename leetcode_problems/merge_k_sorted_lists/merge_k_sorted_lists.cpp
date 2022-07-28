@@ -14,7 +14,7 @@ public:
             {
                 if(lists[i] == nullptr)
                 {
-                    lists.erase(i);
+                    lists.erase(lists.begin()+i);
                 }
                 else if(lists[i]->val < smallestValue)
                 {
@@ -34,7 +34,7 @@ public:
                 mergedList = mergedList->next;
             }
 
-            lists[idOfNodeWithSmallestValue] = lists[idOfNodeWithSmallestValue]->next();
+            lists[idOfNodeWithSmallestValue] = lists[idOfNodeWithSmallestValue]->next;
             idOfNodeWithSmallestValue = -1;
             smallestValue = 10001;  
         }
