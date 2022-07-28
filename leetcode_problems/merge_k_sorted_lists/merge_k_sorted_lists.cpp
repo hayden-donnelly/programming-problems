@@ -35,8 +35,6 @@ public:
             }
 
             lists[idOfNodeWithSmallestValue] = lists[idOfNodeWithSmallestValue]->next;
-            idOfNodeWithSmallestValue = -1;
-            smallestValue = 10001;  
         }
 
         return mergedListStart;
