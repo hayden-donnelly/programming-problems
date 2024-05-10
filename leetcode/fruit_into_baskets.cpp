@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/fruit-into-baskets/description/
+// https://leetcode.com/problems/fruit-into-baskets/
 
 #include <unordered_map>
 
